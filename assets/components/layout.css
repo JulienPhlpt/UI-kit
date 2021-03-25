@@ -1,0 +1,19 @@
+.site-title {
+  background: -webkit-linear-gradient(104.74deg, rgb(245, 161, 36) 0%, rgb(216, 43, 99) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 200px;
+  padding-top: 200px
+}
+.typo .section-title, .pics .section-title {
+  background: -webkit-linear-gradient(104.74deg, rgb(176, 30, 255) 0%, rgb(225, 70, 124) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+.theme {
+  background: #212C4F;
+  color: white;
+  fill: #212C4F !important;
+}

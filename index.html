@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CSS Style</title>
+  </head>
+  <body>
+    <div class="head-container">
+      <div class="hamburger-wrapper">
+        <div class="hamburger-container">
+          <a href="">
+            <div class="hamburger-menu-image"></div>
+          </a>
+          <div id="hamb-menu" class="hamburger-menu" onclick="toggleMenu()">
+            <span
+              id="right-hamb"
+              class="hamburger-top-bun hamburger-bun"
+            ></span>
+            <span
+              id="left-hamb"
+              class="hamburger-bottom-bun hamburger-bun"
+            ></span>
+          </div>
+        </div>
+        <div id="hamb-dropdown" class="hamburger-dropdown">
+          <div
+            class="hamburger-box"
+            style="border-top: 1px solid rgba(255, 255, 255, 0.2)"
+          >
+            <a aria-current="page" class="" href="/">Home</a>
+          </div>
+          <div class="hamburger-box">
+            <a href="/courses">Courses</a>
+          </div>
+          <div class="hamburger-box">
+            <a href="/downloads">Downloads</a>
+          </div>
+          <div class="hamburger-box">
+            <a href="/pricing">Pricing</a>
+          </div>
+          <div class="hamburger-box" id="signin">Sign In</div>
+          <div class="hamburger-box" id="promo">
+            <span class="hamburger-pro">Get Pro Access</span>
+          </div>
+        </div>
+      </div>
+      <!--::::::::::::::::::::::::::::: NAVBAR ::::::::::::::::::::::::::::::-->
+      <!-- Before LogIn -->
+      <div class="navbar" id="nav">
+        <div class="nav-elements">
+          <a href=""
+            ><button id="nav-btn1" class="navbar-btn text-button">
+              Courses
+            </button></a
+          >
+          <a href=""
+            ><button id="nav-btn2" class="navbar-btn text-button">
+              Download
+            </button></a
+          >
+          <a href=""
+            ><button id="nav-btn3" class="navbar-btn text-button">
+              Workshop
+            </button></a
+          >
+          <a href=""
+            ><button id="nav-btn4" class="navbar-btn text-button">
+              Sign In
+            </button></a
+          >
+          <a href=""
+            ><button id="nav-btn5" class="navbar-btn text-button medium-button">
+              Buy Now
+            </button></a
+          >
+          <a href=""></a>
+          <div class="theme-switcher">
+            <div class="theme-sun"></div>
+          </div>
+        </div>
+      </div>
+      <!-- After LogIn -->
+      <!-- <div class="navbar" id="nav">
+          <div class="nav-elements">
+            <a href=""><button class="navbar-btn text-button">Courses</button></a>
+            <a href=""><button class="navbar-btn text-button">Download</button></a>
+            <a href=""><button class="navbar-btn text-button">Workshop</button></a>
+            <a class="pastille-wrap" href=""><button class="pastille navbar-btn text-button">13</button></a>
+            <img src="assets/images/Avatar1.PNG" class="avatar-nav" alt="">
+            <div class="theme-switcher">
+              <div class="theme-sun"></div>
+            </div>
+          </div>
+        </div> -->
+      <!--:::::::::::::::::::::::::::: BANNER :::::::::::::::::::::::::::::::-->
+      <section class="banner">
+        <div class="background-wrapper" height="800px">
+          <div id="back-img" class="background-image"></div>
+          <div class="wave-wrapper">
+            <div class="wave">
+              <svg width="100%" height="150px" fill="none">
+                <path id="theme-svg">
+                  <animate
+                    repeatCount="indefinite"
+                    fill="freeze"
+                    attributeName="d"
+                    dur="10s"
+                    values="M0 95.654C277.431 -69.1705 408 11.654 720 95.654C1032 179.654 1207.5 144.328 1440 95.654V387.654H0V95.654Z; M0 51.8168C277 169.163 433 131.471 720 51.8168C1007 -27.8372 1199 -5.83717 1440 51.8168V343.817H0V51.8168Z; M0 69.3411C342 69.3411 652 -51.313 994 25.687C1336 102.687 1354 103.687 1440 69.3411V361.341H0V69.3411Z; M0 95.654C277.431 -69.1705 408 11.654 720 95.654C1032 179.654 1207.5 144.328 1440 95.654V387.654H0V95.654Z&nbsp; "
+                  ></animate>
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="theme" class="container">
+      <h1 class="site-title">Design UI Kit</h1>
+      <!--::::::::::::::::::::::::::: TYPOGRAPHY ::::::::::::::::::::::::::::-->
+      <section class="typo">
+        <h2 class="section-title">Typography</h2>
+        <h4 class="title">Headings</h4>
+        <div class="head-text">
+          <h1>Heading 1 (80)</h1>
+          <h2>Heading 2 (60)</h2>
+          <h3>Heading 3 (30)</h3>
+          <h4>Heading 4 (24)</h4>
+        </div>
+        <h4 class="title">Body text</h4>
+        <div class="body-text">
+          <div class="cols">
+            <div class="first-col">
+              <p class="large-text">Large Text (24)</p>
+              <p class="medium-text">Medium Text (20)</p>
+              <p class="caption">Caption (18)</p>
+              <p class="normal-text">Normal Text (16)</p>
+              <p class="small-text">Small Text (12)</p>
+            </div>
+            <div class="second-col">
+              <p class="large-bold-text">Large Text bold (24)</p>
+              <p class="medium-bold-text">Medium Text bold (20)</p>
+              <p class="hidden">Caption (18)</p>
+              <p class="normal-bold-text">Normal Text bold (16)</p>
+              <p class="small-bold-text">Small Text bold (12)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--:::::::::::::::::::::::::::::: ASSETS :::::::::::::::::::::::::::::-->
+      <section class="pics">
+        <h2 class="section-title">Assets</h2>
+        <h4 class="title">Avatar</h4>
+        <div class="avatars">
+          <img src="assets/images/Avatar1.PNG" class="avatar" alt="" />
+          <img src="assets/images/Avatar2.PNG" class="avatar" alt="" />
+        </div>
+        <h4 class="title">Icons</h4>
+        <div class="icons">
+          <a href="">
+            <img class="icon" src="assets/images/brave.png" alt="" />
+          </a>
+          <a href="">
+            <img class="icon" src="assets/images/disney.png" alt="" />
+          </a>
+          <a href="">
+            <img class="icon" src="assets/images/gmail.png" alt="" />
+          </a>
+          <a href="">
+            <img class="icon" src="assets/images/ios.png" alt="" />
+          </a>
+          <a href="">
+            <img class="icon" src="assets/images/nasa.png" alt="" />
+          </a>
+          <a href="">
+            <img class="icon" src="assets/images/rockstar.png" alt="" />
+          </a>
+          <a href="">
+            <img class="icon" src="assets/images/slack.png" alt="" />
+          </a>
+          <a href="">
+            <img class="icon" src="assets/images/starbucks.png" alt="" />
+          </a>
+        </div>
+      </section>
+      <!--::::::::::::::::::::::::::::: BUTTONS :::::::::::::::::::::::::::::-->
+      <section class="buttons">
+        <h2 class="section-title">Buttons</h2>
+        <div class="primary-buttons">
+          <h4 class="title">Primary Button</h4>
+          <div class="btn">
+            <button class="primary-btn deep-purple-button">
+              Primary Button
+            </button>
+            <button class="primary-btn blue-button">Primary Button</button>
+            <button class="primary-btn pink-button">Primary Button</button>
+          </div>
+        </div>
+        <div class="secondary-buttons">
+          <h4 class="title">Secondary Button</h4>
+          <div class="btn">
+            <button class="secondary-btn deep-purple-button">
+              Secondary Button
+            </button>
+          </div>
+        </div>
+        <div class="tertiary-buttons">
+          <h4 class="title">Tertiary Button</h4>
+          <div class="btn">
+            <button class="tertiary-btn deep-purple-button">
+              Tertiary Button
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--::::::::::::::::::::::::::::: CARDS :::::::::::::::::::::::::::::::-->
+      <section class="cards">
+        <h2 class="section-title">Cards</h2>
+        <h4 class="title">Card category</h4>
+        <!-- CARD CATEGORY -->
+        <div class="cards-category">
+          <div class="card-category">
+            <a href="">
+              <span>
+                <div class="card-section card-effect">
+                  <img src=https://source.unsplash.com/1600x900/?Animal alt="">
+                  <div class="card-overlay"></div>
+                  <div class="card-reflection"></div>
+                  <div class="card-section-head">
+                    <div class="card-head">
+                      <h3>Animals</h3>
+                    </div>
+                    <div class="card-label">
+                      <div class="label-container">
+                        <div class="title-label" color="rgba(255,255,255,0.6)">
+                          <p>new</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <p class="caption">Nantes</p>
+                  </div>
+                </div>
+              </span>
+            </a>
+          </div>
+          <div class="card-category">
+            <a href="">
+              <span>
+                <div class="card-section card-effect">
+                  <img
+                  src=https://source.unsplash.com/1600x900/?Textures&Patterns
+                  alt="">
+                  <div class="card-overlay"></div>
+                  <div class="card-reflection"></div>
+                  <div class="card-section-head">
+                    <div class="card-head">
+                      <h3>Patterns</h3>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <p class="caption">Nantes</p>
+                  </div>
+                </div>
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- CARD PRODUCT -->
+        <h4 class="title">Card Product</h4>
+        <div class="cards-product">
+          <div class="card-product">
+            <img
+              class="icon-product"
+              src="https://source.unsplash.com/1600x900/?People"
+              alt=""
+            />
+            <div class="right-content">
+              <div class="title">
+                <p>Enjoy anywhere</p>
+              </div>
+              <div class="subtitle">
+                <h3>Mobile and desktop</h3>
+              </div>
+              <div class="content">
+                <h4>
+                  Experience the content from your mobile devices and desktop.
+                  We got downloadable ePubs too.
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <img
+              class="icon-product"
+              src="https://source.unsplash.com/1600x900/?People"
+              alt=""
+            />
+            <div class="right-content">
+              <div class="title">
+                <p>Learn together</p>
+              </div>
+              <div class="subtitle">
+                <h3>Learn with your team</h3>
+              </div>
+              <div class="content">
+                <h4>
+                  Invite your team and see their progress. Also, we can fly to
+                  your city or office to teach your team in person.
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!-- CARD PRODUCT 2-->
+          <div class="card-product2">
+            <img
+              class="icon-product"
+              src="https://source.unsplash.com/1600x900/?People"
+              alt=""
+            />
+            <div class="right-content">
+              <div class="title">
+                <p>Enjoy anywhere</p>
+              </div>
+              <div class="subtitle">
+                <h3>Mobile and desktop</h3>
+              </div>
+              <div class="content">
+                <h4>
+                  Experience the content from your mobile devices and desktop.
+                  We got downloadable ePubs too.
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="card-product2">
+            <img
+              class="icon-product"
+              src="https://source.unsplash.com/1600x900/?People"
+              alt=""
+            />
+            <div class="right-content">
+              <div class="title">
+                <p>Learn together</p>
+              </div>
+              <div class="subtitle">
+                <h3>Learn with your team</h3>
+              </div>
+              <div class="content">
+                <h4>
+                  Invite your team and see their progress. Also, we can fly to
+                  your city or office to teach your team in person.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CARD TRIP -->
+        <h4 class="title">Card Section</h4>
+        <div class="cards-trip">
+          <div class="card-trip">
+            <a class="trip-link" href="" target="_blank">
+              <div class="trip-img-container">
+                <div class="trip-media"></div>
+              </div>
+              <div class="trip-feature">
+                <span class="feature-title">1.1.1.1</span>
+                <div>
+                  If you care about your privacy and faster browsing, this is a
+                  really good way to achieve that.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card-trip">
+            <a class="trip-link" href="" target="_blank">
+              <div class="trip-img-container">
+                <div class="trip-media"></div>
+              </div>
+              <div class="trip-feature">
+                <span class="feature-title">1.1.1.1</span>
+                <div>
+                  If you care about your privacy and faster browsing, this is a
+                  really good way to achieve that.
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--::::::::::::::::::::::::::::: BREAK :::::::::::::::::::::::::::::::-->
+      <div class="break-container">
+        <div class="break">
+          <div class="background-wrapper" height="100%">
+            <div class="background-image" height="100%"></div>
+            <div class="background-wave">
+              <div class="wave">
+                <svg width="100%" height="150px" fill="none">
+                  <path id="theme-svg2">
+                    <animate
+                      repeatCount="indefinite"
+                      fill="freeze"
+                      attributeName="d"
+                      dur="10s"
+                      values="M0 95.654C277.431 -69.1705 408 11.654 720 95.654C1032 179.654 1207.5 144.328 1440 95.654V387.654H0V95.654Z; M0 51.8168C277 169.163 433 131.471 720 51.8168C1007 -27.8372 1199 -5.83717 1440 51.8168V343.817H0V51.8168Z; M0 69.3411C342 69.3411 652 -51.313 994 25.687C1336 102.687 1354 103.687 1440 69.3411V361.341H0V69.3411Z; M0 95.654C277.431 -69.1705 408 11.654 720 95.654C1032 179.654 1207.5 144.328 1440 95.654V387.654H0V95.654Z&nbsp; "
+                    ></animate>
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="background-wave-bottom">
+              <div class="wave">
+                <svg width="100%" height="150px" fill="none">
+                  <path id="theme-svg3">
+                    <animate
+                      repeatCount="indefinite"
+                      fill="freeze"
+                      attributeName="d"
+                      dur="10s"
+                      values="M0 95.654C277.431 -69.1705 408 11.654 720 95.654C1032 179.654 1207.5 144.328 1440 95.654V387.654H0V95.654Z; M0 51.8168C277 169.163 433 131.471 720 51.8168C1007 -27.8372 1199 -5.83717 1440 51.8168V343.817H0V51.8168Z; M0 69.3411C342 69.3411 652 -51.313 994 25.687C1336 102.687 1354 103.687 1440 69.3411V361.341H0V69.3411Z; M0 95.654C277.431 -69.1705 408 11.654 720 95.654C1032 179.654 1207.5 144.328 1440 95.654V387.654H0V95.654Z&nbsp; "
+                    ></animate>
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="title-wrap">
+            <h3>
+              <span>Design for everyone.<br />Coding for designers.</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

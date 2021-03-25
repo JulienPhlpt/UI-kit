@@ -1,0 +1,73 @@
+/*TOP WAVE*********************************************************************/
+.break-container {
+  position: relative;
+  /*margin: 100px 0px;*/
+  text-align: center;
+}
+.break {
+  position: relative;
+  display: grid;
+  align-content: center;
+  height: 500px;
+  overflow: hidden;
+}
+.background-wrapper {
+  background: black;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+.background-image {
+  height: 100%;
+  width: 100%;
+  background: url(../images/Background1.png) center center / cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.background-wave {
+  transform: rotate(180deg);
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  width: 100%;
+}
+.wave {
+  align-self: end;
+}
+.wave svg {
+  position: relative;
+  top: 3px;
+}
+.wave svg path {
+  fill: white;
+}
+
+/*BOTTOM WAVE******************************************************************/
+.background-wave-bottom {
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  width: 100%;
+}
+
+/*TITLE************************************************************************/
+.title-wrap {
+  position: relative;
+}
+.break-container h3 {
+  font-size: 30px;
+  margin: 0px;
+}
+.title-wrap h1, .title-wrap h2, .title-wrap h3, .title-wrap h4 {
+  line-height: 120%;
+}
+.title-wrap h1, .title-wrap h2, .title-wrap h3, .title-wrap h4, .title-wrap p {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0px;
+  background: -webkit-linear-gradient(104.74deg, rgb(245, 161, 36) 0%, rgb(216, 43, 99) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

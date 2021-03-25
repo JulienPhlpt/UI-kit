@@ -1,0 +1,42 @@
+@import url("../assets/components/avatars.css");
+@import url("../assets/components/banner.css");
+@import url("../assets/components/breaks.css");
+@import url("../assets/components/buttons.css");
+@import url("../assets/components/cards.css");
+@import url("../assets/components/layout.css");
+@import url("../assets/components/navbar.css");
+@import url("../assets/components/typo.css");
+@import url("../assets/components/icons.css");
+
+* {
+  transition: background-color 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+    fill 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  outline: none;
+}
+body {
+  font-family: "Roboto", sans serif;
+  padding: 0;
+  margin: 0;
+}
+section {
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 80px;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+h4 {
+  font-size: 24px;
+  margin: 10px 0;
+}

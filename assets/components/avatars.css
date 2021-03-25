@@ -1,0 +1,49 @@
+.pics {
+  width: 1000px;
+}
+.pics .section-title {
+  background: -webkit-linear-gradient(104.74deg, rgb(176, 30, 255) 0%, rgb(225, 70, 124) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+.pics .title {
+  color: #C6D0EB;
+}
+.avatars {
+  max-width: 680px;
+  margin: 90px auto 50px;
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 50px);
+  grid-gap: 40px;
+  justify-content: center;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  margin-right: 5px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2);
+  cursor: pointer;
+}
+.avatar:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px;
+  transform: translateY(-3px);
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2);
+}
+.avatar-nav {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2);
+  cursor: pointer;
+}
+.avatar-nav:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px;
+  transform: translateY(-3px);
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2);
+}
